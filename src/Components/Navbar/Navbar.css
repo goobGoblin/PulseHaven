@@ -1,21 +1,20 @@
 .navbar {
     display: flex;
     justify-content: stretch;
-    /* background-color: #333; */
     padding: 0px 0;
     position: fixed;
-    width: calc(100% - 162px);
-    height: 50px;
-    top: 0px;
-    left: 106px;
+    width: calc(100% - 170px);
+    height: 30px;
+    top: 10px;
+    left: 110px;
     backdrop-filter: blur(10px);
     opacity: 0.9;
     z-index: 1000;
     /* padding: 3px; */
       /* background: linear-gradient(circle, black, silver);  */
       /* transition: background-color 0.3s, color 0.3s; */
-      border: 1px solid white;  
-      /* border-radius: 10px; */
+      /* border: 1px solid white;   */
+    border-radius: 10px;
 
 }
 
@@ -23,10 +22,10 @@
 .navbar a {
   flex-grow: 1;
   text-align: center;
-  line-height: 50px;
-  background: radial-gradient(circle, white, silver);
+  line-height: 30px;
+  background: radial-gradient(circle, black, silver);
   text-decoration: none;
-  color: rgb(114, 114, 114);
+  color: white; /* Adjust the color to better fit your design if needed */
   transition: background-color 0.3s, color 0.3s;
   margin: 0;  
   border: none;
@@ -34,8 +33,20 @@
 
 .navbar a:hover {
     background-color: #555;
-    background: radial-gradient(circle, black, silver);
-    color: white; /* Adjust the color to better fit your design if needed */
+    background: radial-gradient(circle, white, silver);
+    color: rgb(114, 114, 114);
+
+
+}
+
+.navbar a:first-child, .navbar .link:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.navbar a:last-child, .navbar .link:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 
