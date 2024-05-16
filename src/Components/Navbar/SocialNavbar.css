@@ -1,0 +1,14 @@
+.social-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-navbar a {
+    display: block;
+}
+
+.social-navbar img {
+    width: 50px;  /* Set a specific size for the logos */
+    height: auto;
+}

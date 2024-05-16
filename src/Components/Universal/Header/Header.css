@@ -1,0 +1,59 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    height: 110px; 
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4); 
+    /* border: 2px solid black;  */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000; 
+}
+
+.header-title {
+    text-align: center;  
+    color: white;  
+    margin: 0;  
+    top: 0;
+}
+
+.homepage-logo {
+    position: absolute;
+    width: 100px; /* Set your desired width */
+    top: 5px;
+    left: 5px;
+}
+
+.social-nav {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+}
+
+.nav {
+    height: 40px; /* Aligning height with logo if needed */
+}
+
+.site-header {
+    position: relative;
+    width: 100%;
+    height: 150px;  
+    background-color: #333;  
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-canvas {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: calc(100% - 150px);
+    height: 50px;
+    pointer-events: none;  
+}

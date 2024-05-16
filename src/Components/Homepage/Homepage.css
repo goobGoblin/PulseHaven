@@ -5,31 +5,50 @@
     overflow: hidden;
   }
   
-  .homepage-logo {
-    position: absolute;
+.background-gif img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  z-index: -1; /* Ensure the GIF stays in the background */
+}
+
+.top-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 10;
+    width: 100%;
     top: 0;
     left: 0;
+}
+
+.homepage-logo {
+    position: relative;
     width: 100px; /* Set your desired width */
     height: auto; /* Maintain aspect ratio */
-  }
-  
-  
-  .background-gif img {
+}
+
+.social-nav {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    left: 0;
     top: 0;
-    z-index: -1; /* Ensure the GIF stays in the background */
-  }
-  
-  .content {
+    right: 0;
+    display: flex;
+    margin-left: 20px; /* Space between logo and social-nav */
+}
+
+.nav {
+    flex-grow: 1; /* Take remaining space */
+    height: 40px; /* Aligning height with logo if needed */
+}
+
+.content {
     position: relative;
     z-index: 1;
     text-align: center;
     color: black;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
+    padding-top: 60px; /* Adjust the top padding to account for the navbar */
+}
