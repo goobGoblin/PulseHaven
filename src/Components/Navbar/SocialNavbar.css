@@ -1,14 +1,37 @@
 .social-navbar {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around; /* Evenly spaces the child elements */
+    align-items: center; /* Aligns items vertically in the middle */
+    height: 120px; /* Set a height that accommodates the lowered items */
+    
 }
 
 .social-navbar a {
-    display: block;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+
 }
 
-.social-navbar img {
-    width: 50px;  /* Set a specific size for the logos */
-    height: auto;
+.social-navbar a:not(:first-child):not(:last-child) img {
+    margin-bottom: 50px; /* Lower the first and last images by 50px */
+
 }
+
+.social-navbar a:nth-child(2) {
+    margin-right: 150px;
+}
+
+.social-navbar a:nth-child(1),
+.social-navbar a:nth-child(3) {
+    margin-right: 20px;
+}
+
+.social-navbar a img {
+    height: 50px; /* Uniform image height, adjust as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Optionally add hover effects to scale images */
+.social-navbar a:hover img {
+    transform: scale(1.1); /* Enlarges the image slightly on hover */
+}
+
