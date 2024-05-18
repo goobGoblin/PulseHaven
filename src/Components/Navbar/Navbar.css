@@ -34,10 +34,8 @@
 
 .navbar a:hover {
     background-color: #555;
-    background: radial-gradient(circle, black, silver);
-    color: white; /* Adjust the color to better fit your design if needed */
-
-
+    background: radial-gradient(circle, white, black);
+    color: black; /* Adjust the color to better fit your design if needed */
 
 }
 
@@ -49,6 +47,11 @@
 .navbar a:last-child, .navbar .link:last-child {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.navbar a.active {
+  background: radial-gradient(circle, #E9CCF8, black);
+  color: black;
 }
 
 

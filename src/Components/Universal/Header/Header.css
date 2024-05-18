@@ -27,6 +27,15 @@
     top: 5px;
     left: calc(50vw - 60px);
     z-index: 20;
+    
+}
+
+.homepage-logo:hover {
+    transform: scale(1.05);
+}
+
+.logo-link {
+    display: inline-block;
 }
 
 .social-nav {

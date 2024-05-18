@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Header.css';  // Importing the CSS file for styles
 import SocialNavbar from '../../Navbar/SocialNavbar';
 import Navbar from '../../Navbar/Navbar';
@@ -41,7 +42,9 @@ function Header() {
     }, []);
     return (
       <div className="header">
-        <img src="/PulseHaven/Logos/ph_logo.png" alt="Logo" className="homepage-logo" />
+        <Link to="/" className="logo-link">
+            <img src="/PulseHaven/Logos/ph_logo.png" alt="Logo" className="homepage-logo" />
+        </Link>
         {/* <h1 className="header-title">Put your fucking phone away and dance</h1> */}
         <canvas ref={canvasRef} className="header-canvas"></canvas>
         <div className= "social-nav">

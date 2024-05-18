@@ -5,7 +5,6 @@ import Header from '../Universal/Header/Header';
 function UpcomingEventsPage() {
     return (
         <div className="upcoming-events">
-            <Header />
             <h1>Upcoming Events</h1>
             <p>Details about future events will be listed here.</p>
         </div>
