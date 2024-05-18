@@ -16,6 +16,8 @@
 
 }
 
+
+
 .social-navbar a:nth-child(2) {
     margin-right: 150px;
 }
@@ -33,5 +35,12 @@
 /* Optionally add hover effects to scale images */
 .social-navbar a:hover img {
     transform: scale(1.1); /* Enlarges the image slightly on hover */
+}
+
+
+@media (max-width: 768px) { /* You can adjust the max-width value as needed */
+    .social-navbar a {
+        transform: scale(0.8); /* Enlarges the image slightly on hover */
+    }
 }
 

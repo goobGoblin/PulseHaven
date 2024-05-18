@@ -10,28 +10,45 @@ function Navbar() {
         setActiveLink(location.pathname);
     }, [location]);
 
+    const [isFixed, setIsFixed] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const shouldBeFixed = window.scrollY > 80; // Set the scroll threshold
+            if (shouldBeFixed !== isFixed) {
+                setIsFixed(shouldBeFixed);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [isFixed]);
+
     return (
-        <nav className="navbar">
+        <nav className={isFixed ? "navbar fixed" : "navbar"}>
             <Link 
                 to="/members" 
                 className={activeLink === '/members' ? 'active' : ''} 
                 onClick={() => setActiveLink('/members')}
             >
-                Members
+                MEMBERS
             </Link>
             <Link 
                 to="/" 
                 className={activeLink === '/' ? 'active' : ''} 
                 onClick={() => setActiveLink('/')}
             >
-                Home
+                HOME
             </Link>
             <Link 
                 to="/upcoming-events" 
                 className={activeLink === '/upcoming-events' ? 'active' : ''} 
                 onClick={() => setActiveLink('/upcoming-events')}
             >
-                Events
+                EVENTS
             </Link>
         </nav>
     );

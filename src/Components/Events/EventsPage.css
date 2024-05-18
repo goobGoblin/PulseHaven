@@ -1,0 +1,45 @@
+.events-page {
+    position: relative;
+    width: 100%; /* Set to the full width of the parent/container */
+    height: 1700px; /* Set a fixed height or adjust as needed */
+    margin: auto;
+
+}
+
+.event-poster {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform-origin: center; /* Ensure transformations center around the poster's center */
+    width: 80vw; /* Adjust based on your desired size */
+    transition: transform 0.3s ease;
+}
+
+.event-poster img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.event-poster:hover {
+    cursor: pointer; /* Indicates you can interact with the poster */
+    z-index: 10; /* Bring to the front */
+}
+
+
+
+
+
+@media (max-width: 768px) { /* You can adjust the max-width value as needed */
+    .events-page {
+        width: 100%; /* Set to the full width of the parent/container */
+        height: 400px; /* Set a fixed height or adjust as needed */
+        margin: auto;
+    
+    }
+
+
+}

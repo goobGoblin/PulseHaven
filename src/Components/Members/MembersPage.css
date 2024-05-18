@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich:wght@400;700&display=swap');
+
+.member-card-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    top: 1vw;
+    justify-content: space-between; /* Ensure there is space between cards */
+    align-items: stretch; /* Ensure items stretch to the container height */
+    font-family: 'Orbitron';
+    font-size: 10pt;
+}
+
+.member-card {
+    position: relative;
+    flex-grow: 2;
+    width: 100%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 1vw;
+    background-color: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(5px);
+    border: 1px solid white; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);    
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.member-card:first-child {
+    margin-right: 1%;
+}
+
+.header-content h1 {
+    margin: 0; /* Remove default margins */
+    padding-right: 20px; /* Add some spacing between the title and the links */
+    border-bottom: 1px solid white; /* Add a 1px horizontal line below h1 */
+    padding-bottom: 10px; /* Optional: add some padding below the text */
+}
+
+.link-nav {
+    position: absolute;
+    display: flex;
+    gap: 3vw;
+    top: -25px;
+    right: 30px;
+    justify-content: space-around; /* Evenly spaces the child elements */
+    align-items: center; /* Aligns items vertically in the middle */
+    height: 120px; /* Set a height that accommodates the lowered items */
+    
+}
+
+.link-nav a {
+    line-height: 30px;
+}
+
+.link-nav a img {
+    height: 35px; /* Uniform image height, adjust as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.member-biography {
+    font-family: 'Aldrich', ' monospace';
+
+}
+
+h1 {
+    margin-top: 0; /* Remove the top margin */
+    margin-bottom: 10px; /* Adjust the bottom margin as needed */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) { /* You can adjust the max-width value as needed */
+    .member-card-container {
+        flex-direction: column; /* Change flex direction to column on mobile devices */
+        align-items: center; /* Center items vertically */
+    }
+
+    .member-card {
+        max-width: 90%; /* Adjust width for mobile devices */
+        margin-bottom: 10px; /* Add some margin at the bottom for spacing between cards */
+        margin-right: 0; /* Remove right margin */
+        margin-left: 0; /* Remove left margin */
+    }
+    
+    .link-nav {
+        top: -25px;
+        right: 20px;
+    }
+
+
+}

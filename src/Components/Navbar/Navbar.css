@@ -1,23 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap');
+
 .navbar {
     display: flex;
     justify-content: stretch;
     padding: 0px 0;
-    position: fixed;
+    position: absolute;
     width: calc(100% - 10px);
     height: 30px;
     top: 90px;
     left: 5px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
     backdrop-filter: blur(10px);
     opacity: 0.9;
     z-index: 10;
     /* padding: 3px; */
       /* background: linear-gradient(circle, black, silver);  */
       /* transition: background-color 0.3s, color 0.3s; */
-      /* border: 1px solid white;   */
+      border: 1px solid white;  
     border-radius: 10px;
 
 }
 
+.navbar.fixed {
+  position: fixed;
+  top: 2px;
+  z-index: 100;
+}
 
 .navbar a {
   flex-grow: 1;

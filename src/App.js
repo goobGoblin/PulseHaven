@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Homepage from './Components/Homepage/Homepage';
-import UpcomingEventsPage from './Components/Events/UpcomingEventsPage';
+import EventsPage from './Components/Events/EventsPage';
 import MembersPage from './Components/Members/MembersPage';
 import Header from './Components/Universal/Header/Header';
 import './App.css';
@@ -20,7 +20,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Homepage/>} />
-          <Route path="/upcoming-events" element={<UpcomingEventsPage />} />
+          <Route path="/upcoming-events" element={<EventsPage />} />
           <Route path="/members" element={<MembersPage />} />
         </Routes>
       </div>
