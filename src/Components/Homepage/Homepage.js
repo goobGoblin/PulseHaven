@@ -8,7 +8,7 @@ function HomePage() {
   return (
     <div className="homepage">
       <div className="content">
-        <TextSphere /> {/* Add the TextSphere component here */}
+        <TextSphere /> 
       </div>
     </div>
   );
